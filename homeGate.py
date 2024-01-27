@@ -70,7 +70,7 @@ def urlScrap(url):
 
 
     for i in range(len(pricesSpan)):
-        # Gettinh numbers of price
+        # Getting numbers of price
         price = re.sub(r'\d', '', pricesSpan[i].text)
         if price:
             priceList.append(int(price))
