@@ -3,6 +3,7 @@ import argparse
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 def TopProducts(df):
     
     # Top 5 products
