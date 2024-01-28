@@ -47,13 +47,13 @@ def urlScrap(url):
     response = requests.get(url)
 
     if response.status_code != 200:
-        return {}
+        return dict()
 
-    roomsList = []
-    priceList = []
-    spaceList = []
-    addressList = []
-    titleList = []
+    roomsList = list()
+    priceList = list()
+    spaceList = list()
+    addressList = list()
+    titleList = list()
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
